@@ -105,7 +105,7 @@ class CutsceneTwo extends MusicBeatState
 
 
 
-		var lines, false, false, false);
+		
 		
 		
 		
