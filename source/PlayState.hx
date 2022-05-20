@@ -1378,8 +1378,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (!loadRep)
-			rep = new Replay("na");
+		
 		//MUSIC BOX STUFF
 		
 
