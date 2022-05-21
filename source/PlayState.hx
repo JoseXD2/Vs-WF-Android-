@@ -1317,7 +1317,7 @@ class PlayState extends MusicBeatState
 		puppetmusic = 10;
 		
 		#if android
-	        addHitbox();
+	        addAndroidControls();
 	        #end
 		
 
@@ -2077,7 +2077,7 @@ class PlayState extends MusicBeatState
 
 	function startCountdown():Void
 	{       #if android
-	        _hitbox.visible = true;
+	        androidc.visible = true;
 	        #end
 		inCutscene = false;
 
@@ -4656,7 +4656,7 @@ class PlayState extends MusicBeatState
 	function endSong():Void
 	{
 		#if android
-	        _hitbox.visible = false;
+	        androidc.visible = false;
 	        #end
 			
 		{
