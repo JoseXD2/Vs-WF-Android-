@@ -80,7 +80,9 @@ class KadeEngineData
 
 		if (FlxG.save.data.cpuStrums == null)
 			FlxG.save.data.cpuStrums = false;
-
+	    
+                if (FlxG.save.data.keyblinds == null)
+			FlxG.save.data.keyblinds = false;
 		Conductor.recalculateTimings();
 
 		Main.watermarks = FlxG.save.data.watermark;
