@@ -16,6 +16,7 @@ import flixel.util.FlxTimer;
 import flixel.input.actions.FlxActionInput;
 import android.AndroidControls.AndroidControls;
 import android.FlxVirtualPad;
+import android.FlxHitbox
 #end
 
 class MusicBeatState extends FlxUIState
@@ -32,7 +33,7 @@ class MusicBeatState extends FlxUIState
 
 	#if android
 	var _virtualpad:FlxVirtualPad;
-        var _hitbox:Hitbox;
+        var _hitbox:FlxHitbox;
 	var androidc:AndroidControls;
 	var trackedinputs:Array<FlxActionInput> = [];
 	#end
