@@ -120,7 +120,7 @@ class KeyBindMenu extends MusicBeatState
 					changeItem(1);
 				}
 
-                if (FlxG.keys.justPressed.ENTER #if android || _virtualpad.buttonA.justPressed #end){
+                if (controls.BACK)
                     
                     state = "input";
                     FlxG.sound.play(Paths.sound('clickone', 'shared'));
