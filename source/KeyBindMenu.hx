@@ -142,7 +142,7 @@ class KeyBindMenu extends MusicBeatState
                     state = "select";
                     
                 }
-                else if(FlxG.keys.justPressed.ENTER){
+                else if(controls.ACCEPT){
                     addKey(defaultKeys[curSelected]);
                     save();
                     state = "select";
