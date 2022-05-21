@@ -76,24 +76,6 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
-        #if android
-	public function addHitbox() {               
-		_hitbox = new Hitbox();
-
-		controls.setHitBox(_hitbox);
-		trackedinputs = controls.trackedinputs;
-		controls.trackedinputs = [];
-
-		var camcontrol = new flixel.FlxCamera();
-		FlxG.cameras.add(camcontrol);
-		camcontrol.bgColor.alpha = 0;
-		_hitbox.cameras = [camcontrol];
-
-		_hitbox.visible = false;
-		add(_hitbox);
-	}
-        #end
-
 	#if android
         public function addPadCamera() {
 		var camcontrol = new flixel.FlxCamera();
