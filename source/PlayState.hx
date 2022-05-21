@@ -1317,7 +1317,7 @@ class PlayState extends MusicBeatState
 		puppetmusic = 10;
 		
 		#if android
-	        addAndroidControls();
+	        addFlxHitbox();
 	        #end
 		
 
