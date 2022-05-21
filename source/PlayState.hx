@@ -90,8 +90,6 @@ class PlayState extends MusicBeatState
 
 	public static var rep:Replay;
 	public static var loadRep:Bool = false;
-        public var addhitbox:FlxSpriteGroup;
-	public var addFlxHitbox;
 	
 	
 	public static var noteBools:Array<Bool> = [false, false, false, false];
@@ -1321,7 +1319,7 @@ class PlayState extends MusicBeatState
 		puppetmusic = 10;
 		
 		#if android
-	        addFlxHitbox();
+	        addHitbox();
 	        #end
 		
 
@@ -2081,7 +2079,7 @@ class PlayState extends MusicBeatState
 
 	function startCountdown():Void
 	{       #if android
-	        androidc.visible = true;
+	        _hitbox.visible = true;
 	        #end
 		inCutscene = false;
 
@@ -4660,7 +4658,7 @@ class PlayState extends MusicBeatState
 	function endSong():Void
 	{
 		#if android
-	        androidc.visible = false;
+	        _hitbox.visible = false;
 	        #end
 			
 		{
