@@ -119,7 +119,7 @@ class KeyBindMenu extends MusicBeatState
 					changeItem(1);
 				}
 
-                if (FlxG.keys.justPressed.ENTER){
+                if (FlxG.keys.justPressed.ENTER #if android || _virtualpad.buttonA.justPressed #end){
                     
                     state = "input";
                     FlxG.sound.play(Paths.sound('clickone', 'shared'));
@@ -140,7 +140,7 @@ class KeyBindMenu extends MusicBeatState
                 state = "waiting";
 
             case "waiting":
-                if(FlxG.keys.justPressed.ESCAPE){
+                if(FlxG.keys.justPressed.ESCAPE #if android || _virtualpad.buttonB.justPressed #end){
                     keys[curSelected] = tempKey;
                     state = "select";
                     
