@@ -80,7 +80,7 @@ class MusicBeatState extends FlxUIState
 
         #if android
 	public function addHitbox() {               
-		_hitbox = new Hitbox();
+		_hitbox = new FlxHitbox();
 
 		controls.setHitBox(_hitbox);
 		trackedinputs = controls.trackedinputs;
