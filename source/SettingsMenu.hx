@@ -261,7 +261,7 @@ class SettingsMenu extends MusicBeatState
 
 		// DEBUG BULLSHIT
                 #if android
-                addVirtualPad(NONE, A_B_C);
+                addVirtualPad(NONE, A);
                 #end
 		super.create();
 
@@ -545,12 +545,6 @@ class SettingsMenu extends MusicBeatState
 			backtext.text = "Main settings.";
 		}
 		
-
-		#if android
-		if (_virtualpad.buttonC.justPressed) {
-			FlxG.switchState(new android.AndroidControlsMenu());
-		}
-		#end
 		
 		
 
