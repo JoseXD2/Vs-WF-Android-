@@ -1317,8 +1317,8 @@ class PlayState extends MusicBeatState
 		puppetmusic = 10;
 		
 		#if android
-	        addAndroidControls();
-	#end
+	        addHitbox();
+	        #end
 		
 
 		// if (SONG.song == 'South')
@@ -2077,7 +2077,7 @@ class PlayState extends MusicBeatState
 
 	function startCountdown():Void
 	{       #if android
-	        androidc.visible = true;
+	        _hitbox.visible = true;
 	        #end
 		inCutscene = false;
 
@@ -4656,7 +4656,7 @@ class PlayState extends MusicBeatState
 	function endSong():Void
 	{
 		#if android
-	        androidc.visible = true;
+	        _hitbox.visible = false;
 	        #end
 			
 		{
