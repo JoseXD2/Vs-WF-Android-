@@ -261,7 +261,7 @@ class SettingsMenu extends MusicBeatState
 
 		// DEBUG BULLSHIT
                 #if android
-                addVirtualPad(FULL, A_B;
+                addVirtualPad(NONE, A)
                 #end
 		super.create();
 
@@ -375,7 +375,7 @@ class SettingsMenu extends MusicBeatState
 			checktwo.alpha = 0.5;
 		}
 
-		if(FlxG.keys.justPressed.X)
+		if(controls.ACCEPT)
 		{
 
 			FlxG.sound.play(Paths.sound('clickone', 'shared'));
