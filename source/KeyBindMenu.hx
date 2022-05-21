@@ -92,6 +92,10 @@ class KeyBindMenu extends MusicBeatState
         pressx.loadGraphic(Paths.image('menuimages/xback','shared'));
         add(pressx);
 
+        #if android
+        addVirtualPad(UP_DOWN, A_B);
+        #end
+
 		super.create();
 	}
 
