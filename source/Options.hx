@@ -7,7 +7,7 @@ import Controls.KeyboardScheme;
 import flixel.FlxG;
 import openfl.display.FPS;
 import openfl.Lib;
-
+import flixel.FlxSubState;
 class OptionCategory
 {
 	private var _options:Array<Option> = new Array<Option>();
