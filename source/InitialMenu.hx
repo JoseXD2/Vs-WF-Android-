@@ -193,7 +193,9 @@ class InitialMenu extends MusicBeatState
 		
 
 		// DEBUG BULLSHIT
-
+                #if android
+                addVirtualPad(NONE, A);
+                #end
 		super.create();
 
 		// NGio.noLogin(APIStuff.API);
@@ -273,7 +275,7 @@ class InitialMenu extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 
-		if(FlxG.keys.justPressed.ENTER)
+		if(controls.ACCEPT)
 		{
 			FlxG.sound.play(Paths.sound('confirmMenu', 'preload'));
 			go.visible = false;
