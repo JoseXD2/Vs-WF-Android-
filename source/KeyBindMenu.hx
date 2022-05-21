@@ -26,7 +26,6 @@ using StringTools;
 
 class KeyBindMenu extends MusicBeatState
 {
-
     var keyTextDisplay:FlxText;
     var keyWarning:FlxText;
     var warningTween:FlxTween;
@@ -91,7 +90,9 @@ class KeyBindMenu extends MusicBeatState
         pressx = new FlxSprite(0, 0);
         pressx.loadGraphic(Paths.image('menuimages/xback','shared'));
         add(pressx);
-
+                #if android
+                addVirtualPad(FULL, A_B);
+                #end
 		super.create();
 	}
 
@@ -115,12 +116,12 @@ class KeyBindMenu extends MusicBeatState
 					changeItem(1);
 				}
 
-                if (FlxG.keys.justPressed.ENTER){
+                if (controls.ACCEPT){
                     
                     state = "input";
                     FlxG.sound.play(Paths.sound('clickone', 'shared'));
                 }
-                else if(FlxG.keys.justPressed.X){
+                else if(controls.BACK){
                     
                     quit();
                 }
