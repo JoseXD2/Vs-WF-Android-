@@ -261,7 +261,7 @@ class SettingsMenu extends MusicBeatState
 
 		// DEBUG BULLSHIT
                 #if android
-                addVirtualPad(NONE, A)
+                addVirtualPad(NONE, A);
                 #end
 		super.create();
 
