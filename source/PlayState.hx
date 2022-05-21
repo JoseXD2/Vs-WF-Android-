@@ -91,7 +91,7 @@ class PlayState extends MusicBeatState
 	public static var rep:Replay;
 	public static var loadRep:Bool = false;
         public var addhitbox:FlxSpriteGroup;
-	public var addFlxHitbox
+	public var addFlxHitbox;
 	
 	
 	public static var noteBools:Array<Bool> = [false, false, false, false];
