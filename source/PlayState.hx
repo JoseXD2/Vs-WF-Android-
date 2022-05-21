@@ -89,7 +89,8 @@ class PlayState extends MusicBeatState
 
 	public static var rep:Replay;
 	public static var loadRep:Bool = false;
-
+        public var hitbox:FlxSpriteGroup;
+	
 	public static var noteBools:Array<Bool> = [false, false, false, false];
 
 	var halloweenLevel:Bool = false;
@@ -1317,7 +1318,7 @@ class PlayState extends MusicBeatState
 		puppetmusic = 10;
 		
 		#if android
-	        addAndroidControls();
+	        addFlxHitbox();
 	        #end
 		
 
