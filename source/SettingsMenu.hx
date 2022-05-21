@@ -389,7 +389,7 @@ class SettingsMenu extends MusicBeatState
 				FlxTween.tween(staticeffect, {alpha: 1}, 1, {ease: FlxEase.circOut, type: ONESHOT});
 			    new FlxTimer().start(3, function(tmr:FlxTimer)
 				{
-					FlxG.switchState(new android.AndroidControlsMenu());
+					FlxG.switchState(new AnimatronicMenu());
 						
 				});
 			});
