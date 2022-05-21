@@ -5270,8 +5270,19 @@ class PlayState extends MusicBeatState
 				#end
 		 
 				// Prevent player input if botplay is on
-				
-				// HOLDS, check for sustain notes
+		if (PlayStateChangeables.botPlay)
+		{
+			holdArray = [false, false, false, false];
+			pressArray = [false, false, false, false];
+			releaseArray = [false, false, false, false];
+			
+			{
+				holdArray = [false, false, false, false, false];
+				pressArray = [false, false, false, false, false];
+				releaseArray = [false, false, false, false, false];
+			}
+		}
+		// HOLDS, check for sustain notes
 				if (holdArray.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 				{
 					notes.forEachAlive(function(daNote:Note)
@@ -5280,7 +5291,7 @@ class PlayState extends MusicBeatState
 							goodNoteHit(daNote);
 					});
 				}
-		 
+		                
 				// PRESSES, check for note hits
 				if (pressArray.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 				{
