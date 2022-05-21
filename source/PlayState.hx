@@ -17,6 +17,7 @@ import flixel.system.FlxAssets;
 
 import lime.app.Application;
 import lime.media.AudioContext;
+import flixel.group.FlxSpriteGroup;
 import lime.media.AudioManager;
 import openfl.Lib;
 import Section.SwagSection;
